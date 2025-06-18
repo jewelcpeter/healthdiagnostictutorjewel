@@ -9,6 +9,17 @@ except:
     importlib.invalidate_caches()
     nlp = spacy.load("en_core_sci_sm")
 
+<<<<<<< HEAD
+=======
+# spaCy setup
+try:
+    import scispacy
+    import en_core_sci_sm
+    nlp = en_core_sci_sm.load()
+except:
+    import spacy
+    nlp = spacy.load("en_core_web_sm")
+>>>>>>> 1a94bab (Initial commit)
 
 # Load transformer classifier safely
 with st.spinner("Loading AI model..."):
