@@ -1,5 +1,6 @@
 streamlit
-spacy
+spacy==3.7.2
+thinc==8.2.1
 scispacy
 transformers>=4.40
 torch
