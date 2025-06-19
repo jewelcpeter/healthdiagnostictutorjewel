@@ -1,11 +1,13 @@
 import streamlit as st
-
+import os
 #Spacy setup
-import spacy
 try:
     nlp = spacy.load("en_core_sci_sm")
 except:
-    nlp = spacy.load("en_core_web_sm")
+    os.system("python -m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.4.0/en_core_sci_sm-0.4.0.tar.gz")
+    import importlib
+    importlib.invalidate_caches()
+    nlp = spacy.load("en_core_sci_sm")
 
 
 # Load transformer classifier safely
