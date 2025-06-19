@@ -1,6 +1,7 @@
-streamlit
-spacy
-scispacy
-transformers>=4.40
-torch
-https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.4.0/en_core_sci_sm-0.4.0.tar.gz
+streamlit==1.26.0
+spacy==3.7.2
+thinc==8.2.1
+scispacy==0.5.4
+https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz
+transformers==4.41.2
+torch==2.2.2
