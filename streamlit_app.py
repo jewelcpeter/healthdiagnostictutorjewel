@@ -1,13 +1,12 @@
 import streamlit as st
 
-# spaCy setup
+#Spacy setup
+import spacy
 try:
-    import scispacy
-    import en_core_sci_sm
-    nlp = en_core_sci_sm.load()
+    nlp = spacy.load("en_core_sci_sm")
 except:
-    import spacy
     nlp = spacy.load("en_core_web_sm")
+
 
 # Load transformer classifier safely
 with st.spinner("Loading AI model..."):
