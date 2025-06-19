@@ -1,34 +1,15 @@
 import streamlit as st
 import os
-<<<<<<< HEAD
-#Spacy setup
-try:
-    nlp = spacy.load("en_core_sci_sm")
-except:
-    os.system("python -m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.4.0/en_core_sci_sm-0.4.0.tar.gz")
-    import importlib
-    importlib.invalidate_caches()
-    nlp = spacy.load("en_core_sci_sm")
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 431bf36 (Add runtime.txt and config.toml for Streamlit deployment)
-# spaCy setup
 import spacy
+
+# spaCy setup
 try:
     nlp = spacy.load("en_core_sci_sm")
 except:
-<<<<<<< HEAD
-    import spacy
-    nlp = spacy.load("en_core_web_sm")
->>>>>>> 1a94bab (Initial commit)
-=======
     os.system("python -m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.4.0/en_core_sci_sm-0.4.0.tar.gz")
     import importlib
     importlib.invalidate_caches()
     nlp = spacy.load("en_core_sci_sm")
->>>>>>> 431bf36 (Add runtime.txt and config.toml for Streamlit deployment)
 
 # Load transformer classifier safely
 with st.spinner("Loading AI model..."):
